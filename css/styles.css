@@ -1,0 +1,132 @@
+body {
+	font-family: 'Merriweather', serif;
+	font-size: 16px;
+	background-color: #035AA6;
+}
+#navbar {
+	background-color: #32A9D9;
+	border-width: 0;
+	border-radius: 0;
+}
+#logo-img {
+	background: url(../images/ivt-logo-sm.png) no-repeat;
+	width: 80px;
+	height: 80px;
+	margin: 5px 15px 5px 0;
+}
+.navbar-brand a:hover, .navbar-brand a:link {
+	text-decoration: none;
+}
+.navbar-brand a h1 {
+	font-family: 'oswald', sans-serif;
+	color: #BF3641;
+	line-height: .75;
+}
+.navbar-brand p {
+	font-family: 'oswald', sans-serif;
+	color: 	#BF3641;
+	text-transform: uppercase;
+	line-height: .75;
+}
+#brand-name {
+	padding-top: 0;
+}
+.navbar-header button{
+	clear: both;
+}
+.navbar-header button.navbar-toggle, button.collapsed .icon-bar {
+	border: 1px solid #BF3641;
+}
+#nav-list a {
+	color: #BF3641;
+	text-align: center;
+}
+#nav-list {
+	margin-top: 10px;
+}
+.container-fluid .jumbotron {
+	padding: 0;
+	border: 1px solid black;
+	box-shadow: 0 0 50px #222;
+}
+
+#computer-course, #baking-course, #language-course, #fa-course, #beautician-course, #dress-course {
+	height: 240px;
+	margin-bottom: 15px;
+	background-position: center;
+	position: relative;
+}
+#computer-course span, #baking-course span, #language-course span, #fa-course span, #beautician-course span, #dress-course span {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background-color: #222;
+	opacity: .7;
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	font-size: 1.5em;
+}
+#computer-course:hover, #baking-course:hover, #language-course:hover, #fa-course:hover, #beautician-course:hover, #dress-course:hover {
+	border: 1px solid black;
+	box-shadow: 0 0 40px #222;
+}
+#computer-course {
+	background: url(../images/computer.jpg) no-repeat;
+}
+#baking-course {
+	background: url(../images/baking.jpg) no-repeat;
+}
+#language-course {
+	background: url(../images/computer.jpg) no-repeat;
+}
+#fa-course {
+	background: url(../images/fa-designing.jpg) no-repeat;
+}
+#beautician-course {
+	background: url(../images/beautician.jpg) no-repeat;
+}
+#dress-course {
+	background: url(../images/dress-making.jpg) no-repeat;
+}
+/* computer courses*/
+.list-group .list-group-item {
+	border-radius: 15px;
+}
+.course-description h3, .course-description p {
+	color: #fff;
+}
+ /* LARGE DEVICES */
+@media (min-width: 1200px) {
+	.container-fluid .jumbotron {
+		background: url(../images/banner-1400.jpg) no-repeat;
+		height: 743px;
+	}
+	
+}
+
+/* MEDIUM DEVICES */
+@media (min-width: 992px) and (max-width: 1199px) {
+	.container-fluid .jumbotron {
+		background: url(../images/banner-1280.jpg) no-repeat;
+		height: 585px;
+	}
+}
+
+/* SMALL DEVICES */
+@media (min-width: 768px) and (max-width: 991px) {
+	.container-fluid .jumbotron {
+		background: url(../images/banner-992.jpg) no-repeat;
+		height: 453px;
+	}
+	
+}
+
+/* EXTRA SMALL DEVICES */
+@media (max-width: 767px) {
+	#computer-course, #baking-course, #language-course, #fa-course, #beautician-course, #dress-course{
+		width: 400px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
